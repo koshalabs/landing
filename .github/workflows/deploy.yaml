@@ -33,3 +33,8 @@ jobs:
           context: .
           push: true
           tags: ghcr.io/${{ github.repository_owner }}/landing:latest
+
+      - name: Deploy the app
+        uses: digitalocean/app_action/deploy@v2
+        with:
+          token: ${{ secrets.DIGITALOCEAN_APP_PLATFORM_API_KEY }}
