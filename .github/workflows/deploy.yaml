@@ -39,7 +39,7 @@ jobs:
           DIGITALOCEAN_APP_PLATFORM_API_KEY: ${{secrets.DIGITALOCEAN_APP_PLATFORM_API_KEY}}
           DIGITALOCEAN_APP_PLATFORM_APP_ID: ${{vars.DIGITALOCEAN_APP_PLATFORM_APP_ID}}
         run: |
-          curl -X POST \                                                         
+          curl -X POST \
             -H "Content-Type: application/json" \
             -H "Authorization: Bearer $DIGITALOCEAN_APP_PLATFORM_API_KEY" \
             "https://api.digitalocean.com/v2/apps/$DIGITALOCEAN_APP_PLATFORM_APP_ID/deployments"
