@@ -32,6 +32,7 @@ export async function sendEmail({ firstName, lastName, email }) {
       const result = await response.json();
   
       if (result.errors) {
+        console.log(result);
         console.error("GraphQL errors:", result.errors);
         throw new Error(result.errors[0]?.message || "Failed to confirm pre-offer");
       }

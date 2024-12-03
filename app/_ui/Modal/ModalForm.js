@@ -88,7 +88,7 @@ export default function ModalForm({handleCloseModal}) {
                         errors?.terms?.message && <InputError>{errors.terms.message}</InputError>
                     }
                 </div>
-                <KoshaButton type="primary">
+                <KoshaButton type="primary" disabled={isSubmitting}>
                     Get Early Access
                 </KoshaButton>
             </div>

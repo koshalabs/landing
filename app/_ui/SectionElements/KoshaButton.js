@@ -4,8 +4,8 @@ const styles = {
     secondary: "border-2 border-koshaPink text-koshaPink bg-white px-7 py-3 hover:bg-koshaSecondaryButtonHover active:bg-koshaSecondaryButtonActive",
 };
 
-export default function KoshaButton({children, type, onClick}) {
-    return <button className={`${styles[type]} rounded-[100px] font-bold leading-6 text-[20px] transition-all`} onClick={onClick}>
+export default function KoshaButton({children, type, onClick, disabled}) {
+    return <button disabled={disabled} className={`${styles[type]} rounded-[100px] font-bold leading-6 text-[20px] transition-all disabled:cursor-not-allowed`} onClick={onClick}>
         {children}
     </button>
 }
