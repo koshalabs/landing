@@ -4,7 +4,7 @@ import Logo from "../SectionElements/Logo";
 import NavLink from "../SectionElements/NavLink";
 
 export default function Header() {
-    return <nav id="header" className="fixed w-full bg-white top-0 flex justify-center z-50">
+    return <nav className="fixed w-full bg-white top-0 flex justify-center z-50" id="header">
         <div className="flex justify-between items-center px-4 footerPhoneBreak:px-10 py-4 text-xl w-full max-w-[1440px]">
             <NavLink>
                 <Logo />

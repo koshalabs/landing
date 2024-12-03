@@ -2,15 +2,11 @@ function getScrollbarWidth() {
   return window.innerWidth - document.documentElement.clientWidth;
 }
 
-function getNavbarpadding() {
-  return document.documentElement.clientWidth >= 640 ? 40 : 16;
-}
-
 export function disableScroll() {
   const scrollY = window.scrollY;
   const scrollbarWidth = getScrollbarWidth();
 
-  document.getElementById("header").style.paddingRight = `${scrollbarWidth + getNavbarpadding()}px`;
+  document.getElementById("header").style.paddingRight = `${scrollbarWidth}px`;
 
   document.body.style.position = 'fixed';
   document.body.style.top = `-${scrollY}px`;
