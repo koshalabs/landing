@@ -26,7 +26,7 @@ const FAQData = [
 ];
 
 export default function FAQ() {
-    return <section className="mt-8 flex flex-col items-center mx-4 mb-20 lg:mb-[190px]">
+    return <section className="mt-8 flex flex-col items-center mx-4 footerPhoneBreak:mx-10 mb-20 lg:mb-[190px]">
         <SectionHeader styles="mb-8 lg:mb-[120px]" id="faq">
             05 FAQ
         </SectionHeader>

@@ -7,7 +7,7 @@ import SectionSubParagraph from "../SectionElements/SectionSubParagraph";
 import KoshaBlueSpan from "../SectionElements/KoshaBlueSpan";
 
 export default function WhyKosha() {
-    return <section className="text-koshaBlack font-medium px-4 mt-8 flex flex-col items-center">
+    return <section className="text-koshaBlack font-medium px-4 mt-8 flex flex-col items-center footerPhoneBreak:px-10">
         <SectionHeader styles="mb-[57px] lg:mb-[170px] text-center" id="why-kosha">
             02 WHY US
         </SectionHeader>

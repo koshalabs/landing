@@ -122,7 +122,7 @@ const items = [
 ];
 
 export default function HowItWorks() {
-    return <section className="mt-[106px] lg:mt-[197px] flex flex-col items-center mx-4 footerPhoneBreak:mx-8 bg-koshaGreyBg rounded-3xl pt-8 koshaListGrid:pt-10 pb-16 koshaListGrid:pb-[118px]">
+    return <section className="mt-[106px] lg:mt-[197px] flex flex-col items-center mx-4 footerPhoneBreak:mx-10 bg-koshaGreyBg rounded-3xl pt-8 koshaListGrid:pt-10 pb-16 koshaListGrid:pb-[118px]">
         <SectionHeader styles="mb-12 koshaListGrid:mb-16" id="how-it-works">
             03 HOW IT WORKS
         </SectionHeader>

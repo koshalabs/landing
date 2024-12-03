@@ -9,7 +9,7 @@ import SectionSmallParagraph from "../SectionElements/SectionSmallParagraph";
 import GetEarlyAccessButton from "../SectionElements/GetEarlyAccessButton";
 
 export default function PartnershipModel() {
-    return <section className="mt-14 flex flex-col items-center text-koshaBlack lg:mx-8">
+    return <section className="mt-14 flex flex-col items-center text-koshaBlack footerPhoneBreak:mx-10">
         <SectionHeader styles="mb-12 lg:mb-[140px] text-center" id="partnership">
             04 PARTNERSHIP MODEL
         </SectionHeader>

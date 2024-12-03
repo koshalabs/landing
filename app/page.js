@@ -14,7 +14,7 @@ export default function Home() {
     <>
     <Header />
     <main className="flex justify-center overflow-x-hidden">
-      <div className="w-svw max-w-[1920px]">
+      <div className="w-svw max-w-[1440px]">
         <HeroSection />
         <MeetKosha />
         <KoshaHero />
