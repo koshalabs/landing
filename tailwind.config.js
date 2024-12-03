@@ -8,6 +8,8 @@ module.exports = {
   theme: {
     extend: {
       screens: {
+        twoLineFooterMarginBreak: '1370px',
+        customHeroDiscoverButton: '1070px',
         footerPhoneBreak: '835px',
         koshaHeroBreak: '1183px',
         koshaListBreak: '1400px',

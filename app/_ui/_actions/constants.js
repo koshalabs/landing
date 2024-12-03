@@ -1,0 +1,1 @@
+export const GRAPHQL_API = "https://moth-app-stage-dfmcm.ondigitalocean.app/api/graphql";

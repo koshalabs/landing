@@ -4,15 +4,15 @@ import { useState } from "react";
 import FAQListItem from "./FAQListItem";
 import Divider from "./Divider";
 
-export default function FAQListItemContainer({header, text}) {
-    const [isOpen, setIsOpen] = useState(false);
+export default function FAQListItemContainer({header, text, isDefaultOpen}) {
+    const [isOpen, setIsOpen] = useState(isDefaultOpen);
 
-    return <div className="space-y-6 max-w-[1200px]">
-        <header className="flex justify-between items-center gap-4 px-4">
+    return <div className="space-y-6 max-w-[1200px] text-koshaBlack">
+        <header className="flex justify-between items-center gap-4 px-4 cursor-pointer" onClick={() => setIsOpen(prev => !prev)}>
             <h3 className="text-[20px] lg:text-2xl font-medium">
                 {header}
             </h3>
-            <button type="button" className="h-8 w-8 flex justify-center items-center" onClick={() => setIsOpen(prev => !prev)}>
+            <button type="button" className="h-8 w-8 flex justify-center items-center">
                 {
                     isOpen ? <OpenSvg /> : <ClosedSvg />
                 }

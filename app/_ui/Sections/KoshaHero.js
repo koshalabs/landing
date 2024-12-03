@@ -3,7 +3,7 @@ import GetEarlyAccessButton from "../SectionElements/GetEarlyAccessButton";
 
 export default function KoshaHero() {
     return <section className="min-h-[598px] koshaHeroBreak:min-h-[531px] mx-4 rounded-3xl footerPhoneBreak:mx-10 bg-[url('/KoshaHero-mobile.png')] md:bg-[url('/KoshaHero.png')] bg-cover text-white px-6 koshaHeroBreak:px-20 mt-[83.2px] koshaHeroBreak:mt-[130px] flex flex-col gap-10 justify-center">
-        <h3 className="text-[32px] lg:text-[56px] font-medium">
+        <h3 className="leading-[37.5px] text-[32px] lg:text-[56px] font-medium lg:leading-[65.6px]">
             Brands need a smarter, more sustainable way to work with creators
         </h3>
         <div className="flex flex-col gap-10 items-start lg:items-end">

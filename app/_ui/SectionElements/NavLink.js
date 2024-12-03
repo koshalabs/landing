@@ -2,8 +2,8 @@
 
 import Link from "next/link"
 
-export default function NavLink({href, children}) {
-    return <Link href={`#${href}`} className="hover:text-koshaPink transition-colors" onClick={(e) => {
+export default function NavLink({href = "", children}) {
+    return <Link href={`#${href}`} className="hover:text-koshaPink transition-colors whitespace-nowrap" onClick={(e) => {
         e.preventDefault();
         const targetElement = document.getElementById(`${href}`);
         if (targetElement) {

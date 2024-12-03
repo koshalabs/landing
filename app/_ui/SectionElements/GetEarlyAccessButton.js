@@ -18,9 +18,11 @@ export default function GetEarlyAccessButton({type = "big"}) {
         <KoshaButton type={type === "big" ? "primary" : "primarySmall"} onClick={handleOpen}>
             Get Early Access
         </KoshaButton>
-        <div>
+        {
+          isOpen && <div>
             <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
+        }
     </>
   );
 }

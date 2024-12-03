@@ -36,7 +36,7 @@ export default function FAQ() {
             </SectionH2>
             <div className="space-y-10">
                 {
-                    FAQData.map((el, i) => <FAQListItemContainer key={i} header={el.header} text={el.text} />)
+                    FAQData.map((el, i) => <FAQListItemContainer key={i} header={el.header} text={el.text} isDefaultOpen={i === 0} />)
                 }
             </div>
         </section>

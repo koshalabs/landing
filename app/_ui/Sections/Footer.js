@@ -22,12 +22,12 @@ export default function Footer() {
                 <List>
                     <ListItem>
                         <NavLink href="about">
-                            Meet Kosha
+                            Meet KOSHA
                         </NavLink>
                     </ListItem>
                     <ListItem>
                         <NavLink href="why-kosha">
-                            Why Kosha
+                            Why KOSHA
                         </NavLink>
                     </ListItem>
                     <ListItem>

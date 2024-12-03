@@ -52,8 +52,9 @@ export default function PartnershipModel() {
                 <Image
                     src="/KoshaPartnerships.png"
                     alt="partnership-logo"
-                    width={422}
-                    height={484}
+                    width={555}
+                    height={534}
+                    className="object-center"
                 />
             </div>
         </section>

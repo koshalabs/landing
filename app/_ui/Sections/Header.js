@@ -1,3 +1,4 @@
+import Link from "next/link";
 import KoshaButton from "../SectionElements/KoshaButton";
 import Logo from "../SectionElements/Logo";
 import NavLink from "../SectionElements/NavLink";
@@ -7,8 +8,10 @@ export default function Header() {
         <NavLink>
             <Logo />
         </NavLink>
-        <KoshaButton type="secondary">
-            Join Now
-        </KoshaButton>
+        <Link href="https://moth-app-prod-qoyzv.ondigitalocean.app/" target="_blank" rel="noopener noreferrer">
+            <KoshaButton type="secondary">
+                Join Now
+            </KoshaButton>
+        </Link>
     </nav>
 }

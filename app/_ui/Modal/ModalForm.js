@@ -9,18 +9,31 @@ import ModalLink from "./ModalLink";
 import InputError from "../FormComponents/InputError";
 import {toast} from "react-hot-toast";
 import Toast from "../Toasts/Toast";
+import {sendEmail} from "../_actions/actions";
 
 export default function ModalForm({handleCloseModal}) {
     const {register, formState, handleSubmit} = useForm();
     const {errors, isSubmitting} = formState;
 
-    const handleSend = (data) => {
-        handleCloseModal();
-        toast.success(
-            <Toast dismiss={() => toast.dismiss("email")} message="Your application was sent successfully!" />, {
-                duration: 3500,
-                id: "email",
-        });
+    const handleSend = async (data) => {
+        try{
+            const { firstName, lastName, email } = data;
+            await sendEmail({firstName, lastName, email});
+            handleCloseModal();
+            toast.success(
+                <Toast dismiss={() => toast.dismiss("email")} message="Your application was sent successfully!" />, {
+                    duration: 3500,
+                    id: "email",
+            });
+        } catch (e) {
+            console.error(e);
+            toast.error(
+                <Toast dismiss={() => toast.dismiss("email")} message="Your application wasn’t sent. Please try again!" />, {
+                    duration: 3500,
+                    id: "email",
+            });
+        }
+        
     }
 
     return <div>
