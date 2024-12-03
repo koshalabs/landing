@@ -19,9 +19,7 @@ export default function GetEarlyAccessButton({type = "big"}) {
             Get Early Access
         </KoshaButton>
         {
-          isOpen && <div>
-            <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
-        </div>
+          isOpen && <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
         }
     </>
   );
