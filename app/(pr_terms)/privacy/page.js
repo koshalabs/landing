@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+
 import BoldSpan from "@/app/_ui/SectionElements/BoldSpan";
 import MainHeader from "../_ui/MainHeader";
 import Paragraph from "../_ui/Paragraph";
