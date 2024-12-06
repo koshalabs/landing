@@ -70,10 +70,10 @@ export default function Footer() {
                     © All rights reserved
                 </p>
                 <div className="flex gap-5">
-                    <KoshaLink href="https://moth-app-prod-qoyzv.ondigitalocean.app/terms-of-use">
+                    <KoshaLink href="/terms">
                         Terms of Service
                     </KoshaLink>
-                    <KoshaLink href="https://moth-app-prod-qoyzv.ondigitalocean.app/privacy-policy">
+                    <KoshaLink href="/privacy">
                         Privacy Policy
                     </KoshaLink>
                 </div>

@@ -2,9 +2,15 @@
 
 import Link from "next/link"
 
-export default function NavLink({href = "", children}) {
-    return <Link href={`#${href}`} className="hover:text-koshaPink transition-colors whitespace-nowrap" onClick={(e) => {
-        e.preventDefault();
+
+export default function NavLink({href = "", children, isOtherPage}) {
+    return <Link href={isOtherPage ? "/" : `#${href}`} className="hover:text-koshaPink transition-colors whitespace-nowrap" onClick={(e) => {
+        if(!isOtherPage) {
+          e.preventDefault();
+        } else {
+          return;
+        }
+
         const targetElement = document.getElementById(`${href}`);
         if (targetElement) {
           const offset = 100; // HEADER HEIGHT + 15

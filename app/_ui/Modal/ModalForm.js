@@ -81,7 +81,7 @@ export default function ModalForm({handleCloseModal}) {
                             />
                         <label className="text-sm cursor-pointer -translate-y-1" htmlFor="terms">
                             We use Viral Loops for our referral campaign. By clicking below to join this campaign you acknowledge that your information will be transferred to Viral Loops for processing 
-                            in accordance with their <ModalLink href="https://moth-app-prod-qoyzv.ondigitalocean.app/terms-of-use">Terms</ModalLink> and <ModalLink href="https://moth-app-prod-qoyzv.ondigitalocean.app/privacy-policy">Privacy Policy.</ModalLink>
+                            in accordance with their <ModalLink href="/terms">Terms</ModalLink> and <ModalLink href="/privacy">Privacy Policy.</ModalLink>
                         </label>
                     </div>
                     {
