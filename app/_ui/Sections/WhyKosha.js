@@ -4,7 +4,6 @@ import SectionH2 from "../SectionElements/SectionH2";
 import SectionHeader from "../SectionElements/SectionHeader";
 import SectionSmallParagraph from "../SectionElements/SectionSmallParagraph";
 import SectionSubParagraph from "../SectionElements/SectionSubParagraph";
-import KoshaBlueSpan from "../SectionElements/KoshaBlueSpan";
 
 export default function WhyKosha() {
     return <section className="text-koshaBlack font-medium px-4 mt-8 flex flex-col items-center footerPhoneBreak:px-10">
@@ -35,11 +34,6 @@ export default function WhyKosha() {
                 producers, and fans to create standout products that 
                 drive innovation.
                 </SectionSmallParagraph>
-                <p className="flex gap-x-8 flex-wrap justify-center">
-                    <KoshaBlueSpan>Grow</KoshaBlueSpan>
-                    <KoshaBlueSpan>Connect</KoshaBlueSpan>
-                    <KoshaBlueSpan>Trust</KoshaBlueSpan>
-                </p>
             </div>
         </section>
     </section>;
