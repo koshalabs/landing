@@ -70,24 +70,6 @@ export default function ModalForm({handleCloseModal}) {
                 <p className="text-[16px] leading-[19px]">
                     We will use the information you provide on this form to be in touch with you. For more information about privacy practices, please visit our website.
                 </p>
-                <div className="space-y-2">
-                    <div className="flex gap-3 items-start leading-5">
-                        <input
-                            className="min-h-4 min-w-4 rounded-[4px] accent-[#2C354C] cursor-pointer focus:outline-offset-0 focus:outline-koshaBlue"
-                            type="checkbox"
-                            name="terms"
-                            id="terms"
-                            {...register("terms", {validate: (value) => value ? true : "Please accept terms in order to continue."})}
-                            />
-                        <label className="text-sm cursor-pointer -translate-y-1" htmlFor="terms">
-                            We use Viral Loops for our referral campaign. By clicking below to join this campaign you acknowledge that your information will be transferred to Viral Loops for processing 
-                            in accordance with their <ModalLink href="/terms" handleCloseModal={handleCloseModal}>Terms</ModalLink> and <ModalLink href="/privacy" handleCloseModal={handleCloseModal}>Privacy Policy.</ModalLink>
-                        </label>
-                    </div>
-                    {
-                        errors?.terms?.message && <InputError>{errors.terms.message}</InputError>
-                    }
-                </div>
                 <KoshaButton type="primary" disabled={isSubmitting}>
                     Get Early Access
                 </KoshaButton>

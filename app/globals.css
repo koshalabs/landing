@@ -55,4 +55,9 @@
     .modalShadow {
         box-shadow: 0px 4px 8px 0px #00000029;
     }
+
+    .headerShadow {
+      backdrop-filter: blur(24px);
+      box-shadow: 0px 4px 12px 0px #00000014;
+    }
 }
