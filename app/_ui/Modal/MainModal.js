@@ -13,7 +13,7 @@ export default function MainModal({handleCloseModal}) {
             </p>
             <ModalForm handleCloseModal={handleCloseModal} />
             <p className="text-koshaBlue text-[16px]">
-                By joining our referral program, you agree to our Terms & Conditions
+                By joining our beta program, you agree to our Terms & Conditions
             </p>
         </div>
         <button type="button" className="absolute h-9 w-9 top-6 right-6" onClick={handleCloseModal}>

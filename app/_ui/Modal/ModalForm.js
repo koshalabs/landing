@@ -17,8 +17,8 @@ export default function ModalForm({handleCloseModal}) {
 
     const handleSend = async (data) => {
         try{
-            const { firstName, lastName, email } = data;
-            await sendEmail({firstName, lastName, email});
+            const { firstName, lastName } = data;
+            await sendEmail({firstName, lastName, email: data.email.toLowerCase()});
             handleCloseModal();
             toast.success(
                 <Toast dismiss={() => toast.dismiss("email")} message="Your application was sent successfully!" />, {
@@ -61,7 +61,7 @@ export default function ModalForm({handleCloseModal}) {
                     <FormLabel htmlFor="email">Your Email Address</FormLabel>
                     <FormInput disabled={isSubmitting} id="email" type="text" placeholder="Enter your email" register={register} error={errors?.email} 
                         required={{required: "This field is required.",
-                            pattern: {value: /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/,
+                            pattern: {value: /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/i,
                                 message: "Email is invalid.",}}}
                                 />
                 </InputRow>
