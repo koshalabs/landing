@@ -8,7 +8,8 @@ import KoshaHero from "./_ui/Sections/KoshaHero";
 import MeetKosha from "./_ui/Sections/MeetKosha";
 import PartnershipModel from "./_ui/Sections/PartnershipModel";
 import WhyKosha from "./_ui/Sections/WhyKosha";
-
+// added this 10-22-205
+export const dynamic = "force-dynamic";
 export default function Home() {
   return (
     <>
